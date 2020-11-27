@@ -434,6 +434,64 @@ body {
   border-radius: 4px;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon {
+  fill: white;
+}
+
+.social-link .social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer .social-link:hover, .social-footer .social-link:focus {
+  background-color: #2196f3;
+}
+
+.team-item-description .social-link:hover,
+.team-item-description .social-link:focus {
+  background-color: #2196f3;
+}
+
+.social-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer .social-icon {
+  fill: white;
+}
+
 .header {
   padding: 32px 0;
   border: 1px solid #ececec;
